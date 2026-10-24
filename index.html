@@ -34,4 +34,328 @@ header{position:sticky;top:0;z-index:20;background:rgba(8,11,16,.96);border-bott
 
 .logo span,.eyebrow,.accent{color:var(--accent)}
 
-nav{display:flex;align-items:center;
+nav{display:flex;align-items:center;gap:24px}
+
+nav a{font-size:13px;font-weight:bold;color:#d4dce5}
+
+nav a:hover{color:var(--accent)}
+
+.navbtn,.btn{background:var(--accent);color:#071017!important;padding:13px 21px;border-radius:6px;font-weight:800;display:inline-block}
+
+.btn:hover,.navbtn:hover{background:#9ceeff}
+
+.btn-outline{background:transparent;color:white!important;border:1px solid #8493a1;margin-left:9px}
+
+.hero{min-height:660px;display:flex;align-items:center;position:relative;background:linear-gradient(90deg,rgba(5,9,15,.94),rgba(5,9,15,.55)),url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85') center/cover}
+
+.hero-inner{width:min(1200px,100%);margin:auto;padding:100px 6%}
+
+.eyebrow{font-size:12px;letter-spacing:3px;font-weight:800;text-transform:uppercase}
+
+h1{font-size:clamp(42px,7vw,83px);line-height:1.06;letter-spacing:-2px;max-width:850px;margin:20px 0}
+
+.hero p{max-width:560px;font-size:18px;color:#d4dee8;margin-bottom:30px}
+
+.container{max-width:1200px;margin:auto;padding:90px 6%}
+
+h2{font-size:clamp(30px,4vw,48px);line-height:1.15;margin:12px 0 18px}
+
+.muted{color:var(--muted)}
+
+.center{text-align:center}
+
+.center p{max-width:650px;margin:0 auto}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:42px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:transform .25s,border-color .25s}
+
+.card:hover{transform:translateY(-5px);border-color:var(--accent)}
+
+.card img{width:100%;height:215px;object-fit:cover;display:block}
+
+.card-body{padding:25px}
+
+.card h3{font-size:23px;margin:0 0 12px}
+
+.card p{color:var(--muted);font-size:15px}
+
+.price{display:block;color:var(--accent);font-weight:800;margin:20px 0}
+
+.textlink{font-weight:bold;font-size:14px;color:white;border-bottom:1px solid var(--accent);padding-bottom:5px}
+
+.band{background:#101923;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:35px}
+
+.feature-num{font-size:36px;font-weight:900;color:var(--accent)}
+
+.feature h3{margin:10px 0}
+
+.feature p{color:var(--muted);font-size:15px}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+
+.about img{width:100%;height:440px;object-fit:cover;border-radius:10px}
+
+.contact{background:linear-gradient(135deg,#122839,#0c121b);border-top:1px solid #284252;text-align:center;padding:90px 6%}
+
+.contact h2{max-width:700px;margin:15px auto}
+
+.contact p{color:#c0cfda}
+
+.contact-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+
+.contact .btn-outline{margin-left:0}
+
+footer{padding:28px 6%;text-align:center;color:#8495a5;font-size:12px;border-top:1px solid var(--line)}
+
+.demo{display:inline-block;border:1px solid #435364;padding:5px 12px;border-radius:50px;color:#b7c5d2;font-size:11px;letter-spacing:1px;margin-bottom:14px}
+
+@media(max-width:800px){
+
+nav{gap:12px}
+
+nav a:not(.navbtn){display:none}
+
+.logo{font-size:18px}
+
+.navbtn{font-size:12px;padding:10px 12px}
+
+.hero{min-height:570px}
+
+.grid,.features{grid-template-columns:1fr}
+
+.about{grid-template-columns:1fr}
+
+.about img{height:310px}
+
+.container{padding:65px 6%}
+
+.hero-inner{padding:80px 6%}
+
+.btn-outline{margin-left:0;margin-top:10px}
+
+}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<a class="logo" href="#">NORD<span>GLANS.</span></a>
+
+<nav aria-label="Hovedmeny">
+
+<a href="#tjenester">TJENESTER</a>
+
+<a href="#fordeler">FORDELER</a>
+
+<a href="#om">OM OSS</a>
+
+<a class="navbtn" href="#kontakt">TA KONTAKT ↗</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<div class="hero-inner">
+
+<div class="eyebrow">Premium bilpleie • Demonstrasjonskonsept</div>
+
+<h1>REN BIL.<br><span class="accent">REN FØLELSE.</span></h1>
+
+<p>Bilpleie handler om mer enn bare vask. Det handler om detaljer, presisjon og følelsen av en bil som ser fantastisk ut.</p>
+
+<a class="btn" href="#tjenester">UTFORSK TJENESTER →</a>
+
+<a class="btn btn-outline" href="#kontakt">KONTAKT OSS</a>
+
+</div>
+
+</section>
+
+<section class="container" id="tjenester">
+
+<div class="center">
+
+<div class="eyebrow">Hva vi tilbyr</div>
+
+<h2>Bilpleie på et nytt nivå.</h2>
+
+<p class="muted">Fra grundig vask til lakkbehandling. Her er et eksempel på hvordan tjenestene til en profesjonell bilpleiebedrift kan presenteres.</p>
+
+</div>
+
+<div class="grid">
+
+<article class="card">
+
+<img loading="lazy" src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=80" alt="Bil som rengjøres">
+
+<div class="card-body">
+
+<h3>01 / Utvendig vask</h3>
+
+<p>Grundig og skånsom rengjøring som gir bilen et friskt og velstelt utseende.</p>
+
+<span class="price">Pris på forespørsel</span>
+
+<a class="textlink" href="#kontakt">FORESPØR TJENESTE →</a>
+
+</div>
+
+</article>
+
+<article class="card">
+
+<img loading="lazy" src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=900&q=80" alt="Bilinteriør">
+
+<div class="card-body">
+
+<h3>02 / Innvendig pleie</h3>
+
+<p>Rengjøring av interiør, matter og overflater med fokus på detaljer.</p>
+
+<span class="price">Pris på forespørsel</span>
+
+<a class="textlink" href="#kontakt">FORESPØR TJENESTE →</a>
+
+</div>
+
+</article>
+
+<article class="card">
+
+<img loading="lazy" src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Blank bil">
+
+<div class="card-body">
+
+<h3>03 / Polering</h3>
+
+<p>En behandling som fremhever bilens finish og gir lakken flott glans.</p>
+
+<span class="price">Pris på forespørsel</span>
+
+<a class="textlink" href="#kontakt">FORESPØR TJENESTE →</a>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<section class="band" id="fordeler">
+
+<div class="container">
+
+<div class="eyebrow">Vår filosofi</div>
+
+<h2>Detaljene gjør forskjellen.</h2>
+
+<div class="features">
+
+<div class="feature">
+
+<div class="feature-num">01</div>
+
+<h3>Fokus på kvalitet</h3>
+
+<p>En gjennomført opplevelse, fra første kontakt til ferdig resultat.</p>
+
+</div>
+
+<div class="feature">
+
+<div class="feature-num">02</div>
+
+<h3>Øye for detaljer</h3>
+
+<p>De små detaljene er det som skaper den store forskjellen.</p>
+
+</div>
+
+<div class="feature">
+
+<div class="feature-num">03</div>
+
+<h3>Enkel kontakt</h3>
+
+<p>Send en forespørsel direkte via e-post eller telefon.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="container about" id="om">
+
+<div>
+
+<div class="eyebrow">Om konseptet</div>
+
+<h2>Skapt for å gjøre inntrykk.</h2>
+
+<p class="muted">Nordglans Bilpleie er et fiktivt bilpleiekonsept utviklet for å demonstrere hvordan en moderne og profesjonell nettside kan se ut.</p>
+
+<p class="muted">Designet kombinerer sterke bilder, tydelig informasjon og en enkel vei til kontakt.</p>
+
+<a class="btn" href="#kontakt">TA KONTAKT →</a>
+
+</div>
+
+<img loading="lazy" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85" alt="Sportsbil med eksklusivt utseende">
+
+</section>
+
+<section class="contact" id="kontakt">
+
+<div class="demo">DEMONSTRASJONSNETTSIDE</div>
+
+<div class="eyebrow">Neste steg</div>
+
+<h2>KLAR FOR EN BIL SOM SKINNER?</h2>
+
+<p>Dette er en demo. Kontaktinformasjonen nedenfor går til personen bak nettsideprosjektet, ikke en faktisk bilpleiebedrift.</p>
+
+<div class="contact-actions">
+
+<a class="btn" href="mailto:remsti02@gmail.com?subject=Henvendelse%20fra%20Nordglans-demo">SEND E-POST ↗</a>
+
+<a class="btn btn-outline" href="tel:+4793847061">RING 938 47 061</a>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>© 2026 NORDGLANS BILPLEIE • PREMIUM DEMO</p>
+
+<p>Fiktiv bedrift. Bilder er illustrasjonsbilder. Ingen reell booking eller bilpleietjeneste tilbys gjennom denne nettsiden.</p>
+
+</footer>
+
+</body>
+
+</html>

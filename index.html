@@ -1,19 +1,37 @@
 <!DOCTYPE html>
+
 <html lang="no">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nordglans Bilpleie | Bilpleie med kvalitet</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="theme-color" content="#080b10">
+
+<meta name="description" content="Nordglans Bilpleie – en premium demonstrasjonsnettside for moderne bilpleie.">
+
+<title>Nordglans | Premium Bilpleie</title>
+
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0b111b;color:#f4f7fb;font-family:Arial,sans-serif;line-height:1.6}header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;gap:15px;background:#101b2a}header strong{font-size:21px;color:#66d9e8}nav a{color:white;text-decoration:none;margin-left:15px;font-size:14px}.hero{padding:105px 7%;text-align:center;background:linear-gradient(135deg,#102e42,#0b111b)}h1{font-size:clamp(36px,7vw,64px);line-height:1.1;margin:0 0 20px}h2{font-size:32px;margin-bottom:12px}.hero p{font-size:19px;color:#d0e0e9;max-width:650px;margin:0 auto 28px}.btn{display:inline-block;background:#62dce8;color:#07111c;padding:14px 25px;border-radius:9px;text-decoration:none;font-weight:bold}.section{padding:65px 7%;max-width:1150px;margin:auto}.muted{color:#b8c6d3}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}.card{background:#162435;padding:25px;border:1px solid #2a4155;border-radius:14px}.card h3{color:#75e4ee;margin-top:0}.price{font-size:24px;font-weight:bold;color:white}.contact{background:#132436;text-align:center;padding:65px 7%}.contact a{color:#7ce6f0}footer{text-align:center;padding:24px;background:#080d15;color:#9cabb9;font-size:13px}@media(max-width:600px){header{flex-direction:column}nav a{margin:0 8px}.hero{padding:80px 6%}}
-</style>
-</head>
-<body>
-<header><strong>✦ NORDGLANS</strong><nav><a href="#tjenester">Tjenester</a><a href="#om">Om oss</a><a href="#kontakt">Kontakt</a></nav></header>
-<section class="hero"><h1>Gi bilen glansen den fortjener.</h1><p>Moderne bilpleie med fokus på detaljer, kvalitet og et resultat som imponerer.</p><a class="btn" href="#kontakt">Kontakt oss</a></section>
-<section class="section" id="tjenester"><h2>Våre tjenester</h2><p class="muted">Eksempler på bilpleietjenester. Priser avtales ved forespørsel.</p><div class="cards"><div class="card"><h3>Utvendig vask</h3><p>Skånsom vask og rengjøring for en ren og blank bil.</p><p class="price">Pris på forespørsel</p></div><div class="card"><h3>Innvendig rengjøring</h3><p>Grundig rengjøring av kupé, matter og overflater.</p><p class="price">Pris på forespørsel</p></div><div class="card"><h3>Polering</h3><p>Behandling som fremhever lakken og gir flott glans.</p><p class="price">Pris på forespørsel</p></div></div></section>
-<section class="section" id="om"><h2>Bilpleie med øye for detaljer</h2><p class="muted">Nordglans Bilpleie er et demonstrasjonskonsept som viser hvordan en moderne nettside for bilpleie kan se ut.</p></section>
-<section class="contact" id="kontakt"><h2>Ta kontakt</h2><p>Har du spørsmål? Kontakt Remi Stiansen.</p><p>Telefon: <a href="tel:+4793847061">938 47 061</a></p><p>E-post: <a href="mailto:remsti02@gmail.com">remsti02@gmail.com</a></p><a class="btn" href="mailto:remsti02@gmail.com?subject=Henvendelse%20fra%20Nordglans">Send e-post</a></section>
-<footer>© Nordglans Bilpleie · Demonstrasjonsnettside – ikke en faktisk bilpleiebedrift</footer>
-</body>
-</html>
+
+:root{--bg:#080b10;--card:#111821;--line:#26323e;--accent:#64dbf4;--text:#f4f7fb;--muted:#aab8c5}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+
+a{text-decoration:none;color:inherit}
+
+header{position:sticky;top:0;z-index:20;background:rgba(8,11,16,.96);border-bottom:1px solid var(--line)}
+
+.nav{max-width:1200px;margin:auto;padding:17px 6%;display:flex;justify-content:space-between;align-items:center;gap:15px}
+
+.logo{font-weight:900;font-size:22px;letter-spacing:2px}
+
+.logo span,.eyebrow,.accent{color:var(--accent)}
+
+nav{display:flex;align-items:center;
